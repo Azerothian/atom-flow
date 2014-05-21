@@ -1,4 +1,4 @@
-{$} = require "atom"
+{$, View} = require "atom"
 joint = require "./util/joint"
 {Graph, Link, Paper} = joint.dia
 _ = require "lodash"
@@ -200,7 +200,7 @@ module.exports = class FlowView extends View
       position:
         x: 470
         y: 160
- 
+
       attrs:
         ".label":
           text: "accept"
